@@ -1,4 +1,4 @@
-!SESSION 2021-02-08 11:06:56.344 -----------------------------------------------
+!SESSION 2021-02-23 16:34:45.607 -----------------------------------------------
 eclipse.buildId=4.5.0.I20150603-2000
 java.version=1.8.0_281
 java.vendor=Oracle Corporation
@@ -6,288 +6,62 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
 Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
-!ENTRY org.eclipse.egit.ui 2 0 2021-02-08 11:07:30.480
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\KB'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2021-02-08 11:07:41.888 -----------------------------------------------
-eclipse.buildId=4.5.0.I20150603-2000
-java.version=1.8.0_281
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
-Framework arguments:  -product org.eclipse.epp.package.jee.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
-
-!ENTRY org.eclipse.egit.ui 2 0 2021-02-08 11:07:52.434
+!ENTRY org.eclipse.egit.ui 2 0 2021-02-23 16:35:04.457
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\KB'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
-!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2021-02-08 11:08:56.392
-!MESSAGE Updating the index from remote failed. Version: 1.0.0.v20150617-0732
+!ENTRY org.eclipse.equinox.event 4 0 2021-02-23 16:35:05.417
+!MESSAGE Exception while dispatching event org.osgi.service.event.Event [topic=org/eclipse/e4/ui/model/application/ApplicationElement/tags/REMOVE] {ChangedElement=org.eclipse.e4.ui.model.application.ui.basic.impl.PartStackImpl@627d5f99 (elementId: stickyFolderRight, tags: [active], contributorURI: null) (widget: CTabFolder {}, renderer: org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer@17e725fb, toBeRendered: false, onTop: false, visible: true, containerData: 2500, accessibilityPhrase: null), Widget=CTabFolder {}, AttName=tags, EventType=REMOVE, Position=1, OldValue=Maximized} to handler org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler@3063493e
 !STACK 0
-org.apache.lucene.index.IndexNotFoundException: no segments* file found in org.apache.lucene.store.MMapDirectory@C:\Users\KB\AppData\Local\Temp\1612750136371-0 lockFactory=org.apache.lucene.store.NativeFSLockFactory@225e4d66: files: []
-	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:712)
-	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:593)
-	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:359)
-	at org.apache.lucene.index.IndexWriter.addIndexes(IndexWriter.java:3132)
-	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseService.replaceContent(ProblemsDatabaseService.java:175)
-	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:71)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-!SESSION 2021-02-08 11:10:21.549 -----------------------------------------------
-eclipse.buildId=4.5.0.I20150603-2000
-java.version=1.8.0_281
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
-Framework arguments:  -product org.eclipse.epp.package.jee.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
-
-!ENTRY org.eclipse.egit.ui 2 0 2021-02-08 11:10:30.029
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\KB'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-
-!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2021-02-08 11:11:33.732
-!MESSAGE Updating the index from remote failed. Version: 1.0.0.v20150617-0732
-!STACK 0
-org.apache.lucene.index.IndexNotFoundException: no segments* file found in org.apache.lucene.store.MMapDirectory@C:\Users\KB\AppData\Local\Temp\1612750293704-0 lockFactory=org.apache.lucene.store.NativeFSLockFactory@5351c9bd: files: []
-	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:712)
-	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:593)
-	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:359)
-	at org.apache.lucene.index.IndexWriter.addIndexes(IndexWriter.java:3132)
-	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseService.replaceContent(ProblemsDatabaseService.java:175)
-	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:71)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-02-08 11:13:33.278
-!MESSAGE Failed to download org.eclipse.recommenders:index::zip:0.0.0
-!STACK 0
-org.eclipse.aether.resolution.ArtifactResolutionException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/mars/)
-	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444)
-	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246)
-	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223)
-	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:294)
-	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:190)
-	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:172)
-	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:167)
-	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/mars/)
-	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:39)
-	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:355)
-	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:67)
-	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:581)
-	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:249)
-	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:520)
-	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421)
-	... 8 more
-
-!ENTRY org.eclipse.recommenders.models.rcp 1 0 2021-02-08 11:13:33.283
-!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from the model repositories. Are you offline?
-
-!ENTRY org.eclipse.recommenders.rcp 2 15 2021-02-08 13:13:33.501
-!MESSAGE Failed to parse news feed
-!STACK 0
-org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 116; "raquo" 엔티티가 참조되었지만 선언되지 않았습니다.
-	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
-	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
-	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.evaluate(Unknown Source)
-	at org.eclipse.recommenders.internal.rcp.news.RssParser.getEntries(RssParser.java:53)
-	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.getNewsItems(CheckForProjectNewsJob.java:97)
-	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.doRun(CheckForProjectNewsJob.java:89)
-	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.run(CheckForProjectNewsJob.java:62)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
---------------- linked to ------------------
-javax.xml.xpath.XPathExpressionException: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 116; "raquo" 엔티티가 참조되었지만 선언되지 않았습니다.
-	at com.sun.org.apache.xpath.internal.jaxp.XPathExpressionImpl.evaluate(Unknown Source)
-	at org.eclipse.recommenders.internal.rcp.news.RssParser.getEntries(RssParser.java:53)
-	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.getNewsItems(CheckForProjectNewsJob.java:97)
-	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.doRun(CheckForProjectNewsJob.java:89)
-	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.run(CheckForProjectNewsJob.java:62)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 116; "raquo" 엔티티가 참조되었지만 선언되지 않았습니다.
-	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
-	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
-	... 6 more
-
-!ENTRY org.eclipse.equinox.p2.discovery 4 0 2021-02-08 14:41:40.703
-!MESSAGE Failed to discover all connectors.
-!SUBENTRY 1 org.eclipse.equinox.p2.discovery 4 0 2021-02-08 14:41:40.703
-!MESSAGE RemoteBundleDiscoveryStrategy failed with an error
-!STACK 1
-org.eclipse.core.runtime.CoreException: IO failure: cannot load discovery directory
-	at org.eclipse.equinox.internal.p2.discovery.compatibility.RemoteBundleDiscoveryStrategy.performDiscovery(RemoteBundleDiscoveryStrategy.java:96)
-	at org.eclipse.equinox.internal.p2.discovery.Catalog.performDiscovery(Catalog.java:85)
-	at org.eclipse.equinox.internal.p2.ui.discovery.wizards.CatalogViewer$6.run(CatalogViewer.java:569)
-	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
-Caused by: java.io.FileNotFoundException: http://download.eclipse.org/recommenders/discovery/2.0/completion/directory.xml
-	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryStatusHelper.checkFileNotFound(RepositoryStatusHelper.java:302)
-	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.checkException(FileInfoReader.java:222)
-	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFiles(FileInfoReader.java:114)
-	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFile(FileInfoReader.java:127)
-	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getLastModified(FileInfoReader.java:132)
-	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.getLastModified(RepositoryTransport.java:229)
-	at org.eclipse.equinox.internal.p2.discovery.compatibility.util.CacheManager.createCache(CacheManager.java:101)
-	at org.eclipse.equinox.internal.p2.discovery.compatibility.util.TransportUtil.readResource(TransportUtil.java:101)
-	at org.eclipse.equinox.internal.p2.discovery.compatibility.RemoteBundleDiscoveryStrategy.performDiscovery(RemoteBundleDiscoveryStrategy.java:81)
-	... 3 more
-!SUBENTRY 2 org.eclipse.equinox.p2.discovery 4 0 2021-02-08 14:41:40.704
-!MESSAGE IO failure: cannot load discovery directory
-!STACK 0
-java.io.FileNotFoundException: http://download.eclipse.org/recommenders/discovery/2.0/completion/directory.xml
-	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryStatusHelper.checkFileNotFound(RepositoryStatusHelper.java:302)
-	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.checkException(FileInfoReader.java:222)
-	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFiles(FileInfoReader.java:114)
-	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getRemoteFile(FileInfoReader.java:127)
-	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getLastModified(FileInfoReader.java:132)
-	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.getLastModified(RepositoryTransport.java:229)
-	at org.eclipse.equinox.internal.p2.discovery.compatibility.util.CacheManager.createCache(CacheManager.java:101)
-	at org.eclipse.equinox.internal.p2.discovery.compatibility.util.TransportUtil.readResource(TransportUtil.java:101)
-	at org.eclipse.equinox.internal.p2.discovery.compatibility.RemoteBundleDiscoveryStrategy.performDiscovery(RemoteBundleDiscoveryStrategy.java:81)
-	at org.eclipse.equinox.internal.p2.discovery.Catalog.performDiscovery(Catalog.java:85)
-	at org.eclipse.equinox.internal.p2.ui.discovery.wizards.CatalogViewer$6.run(CatalogViewer.java:569)
-	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
-
-!ENTRY org.eclipse.jdt.debug 4 125 2021-02-08 14:41:56.127
-!MESSAGE Internal error logged from JDI Debug: 
-!STACK 0
-org.eclipse.jdi.TimeoutException: Timeout occurred while waiting for packet 5197.
-	at org.eclipse.jdi.internal.connect.PacketReceiveManager.getReply(PacketReceiveManager.java:187)
-	at org.eclipse.jdi.internal.connect.PacketReceiveManager.getReply(PacketReceiveManager.java:198)
-	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:192)
-	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:227)
-	at org.eclipse.jdi.internal.VirtualMachineImpl.classesBySignature(VirtualMachineImpl.java:652)
-	at org.eclipse.jdi.internal.VirtualMachineImpl.classesByName(VirtualMachineImpl.java:682)
-	at org.eclipse.jdt.internal.debug.core.model.JDIDebugTarget.jdiClassesByName(JDIDebugTarget.java:1630)
-	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.filterUnloadedTypes(JavaHotCodeReplaceManager.java:351)
-	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.doHotCodeReplace(JavaHotCodeReplaceManager.java:462)
-	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager.access$0(JavaHotCodeReplaceManager.java:445)
-	at org.eclipse.jdt.internal.debug.core.hcr.JavaHotCodeReplaceManager$1.run(JavaHotCodeReplaceManager.java:316)
-	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.run(DebugPlugin.java:1116)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.debug.core.DebugPlugin$AsynchRunner.async(DebugPlugin.java:1097)
-	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:439)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-!SESSION 2021-02-09 12:08:31.028 -----------------------------------------------
-eclipse.buildId=4.5.0.I20150603-2000
-java.version=1.8.0_281
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
-Framework arguments:  -product org.eclipse.epp.package.jee.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
-
-!ENTRY org.eclipse.egit.ui 2 0 2021-02-09 12:08:40.824
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\KB'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-
-!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2021-02-09 12:09:44.835
-!MESSAGE Updating the index from remote failed. Version: 1.0.0.v20150617-0732
-!STACK 0
-org.apache.lucene.index.IndexNotFoundException: no segments* file found in org.apache.lucene.store.MMapDirectory@C:\Users\KB\AppData\Local\Temp\1612840184813-0 lockFactory=org.apache.lucene.store.NativeFSLockFactory@109d166c: files: []
-	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:712)
-	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:593)
-	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:359)
-	at org.apache.lucene.index.IndexWriter.addIndexes(IndexWriter.java:3132)
-	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseService.replaceContent(ProblemsDatabaseService.java:175)
-	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:71)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-02-09 12:10:44.757
-!MESSAGE Failed to download org.eclipse.recommenders:index::zip:0.0.0
-!STACK 0
-org.eclipse.aether.resolution.ArtifactResolutionException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/mars/)
-	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444)
-	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246)
-	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223)
-	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:294)
-	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:190)
-	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:172)
-	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:167)
-	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/mars/)
-	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:39)
-	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:355)
-	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:67)
-	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:581)
-	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:249)
-	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:520)
-	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421)
-	... 8 more
-
-!ENTRY org.eclipse.recommenders.models.rcp 1 0 2021-02-09 12:10:44.763
-!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from the model repositories. Are you offline?
-
-!ENTRY org.eclipse.ui.workbench 4 0 2021-02-09 16:35:41.170
-!MESSAGE An unexpected exception was thrown.
-!STACK 0
-java.util.ConcurrentModificationException
-	at java.util.HashMap$HashIterator.nextNode(Unknown Source)
-	at java.util.HashMap$ValueIterator.next(Unknown Source)
-	at org.eclipse.ui.internal.services.ServiceLocator.dispose(ServiceLocator.java:136)
-	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:1968)
-	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1575)
-	at org.eclipse.ui.internal.WorkbenchWindow.access$16(WorkbenchWindow.java:1542)
-	at org.eclipse.ui.internal.WorkbenchWindow$11.run(WorkbenchWindow.java:1603)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
-	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1600)
-	at org.eclipse.ui.internal.Workbench$14.run(Workbench.java:1149)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1131)
-	at org.eclipse.ui.internal.Workbench.access$21(Workbench.java:1073)
-	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1414)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
-	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1411)
-	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1384)
-	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1571)
-	at org.eclipse.ui.internal.WorkbenchWindow.access$16(WorkbenchWindow.java:1542)
-	at org.eclipse.ui.internal.WorkbenchWindow$11.run(WorkbenchWindow.java:1603)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
-	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1600)
-	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1614)
-	at org.eclipse.ui.internal.WorkbenchWindow$6.close(WorkbenchWindow.java:523)
-	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer$7.shellClosed(WBWRenderer.java:518)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:98)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1122)
-	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:308)
-	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1703)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4664)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1633)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2117)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
-	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4760)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1633)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2117)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2544)
-	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:498)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4760)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1633)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2117)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3767)
+org.eclipse.e4.core.di.InjectionException: java.lang.IllegalStateException: Application does not have an active window
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:56)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:186)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4761)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:211)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:53)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:85)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:59)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.remove(NotifyingListImpl.java:725)
+	at org.eclipse.emf.common.util.AbstractEList.remove(AbstractEList.java:462)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.subscribeTopicToBeRendered(PartRenderingEngine.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:83)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:85)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:59)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setToBeRendered(UIElementImpl.java:303)
+	at org.eclipse.e4.ui.workbench.addons.cleanupaddon.CleanupAddon$2.run(CleanupAddon.java:317)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
 	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
@@ -309,25 +83,22 @@ java.util.ConcurrentModificationException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
-!SESSION 2021-02-16 14:22:28.446 -----------------------------------------------
-eclipse.buildId=4.5.0.I20150603-2000
-java.version=1.8.0_281
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
-Framework arguments:  -product org.eclipse.epp.package.jee.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+Caused by: java.lang.IllegalStateException: Application does not have an active window
+	at org.eclipse.e4.ui.internal.workbench.ApplicationPartServiceImpl.getActiveWindowService(ApplicationPartServiceImpl.java:43)
+	at org.eclipse.e4.ui.internal.workbench.ApplicationPartServiceImpl.requestActivation(ApplicationPartServiceImpl.java:82)
+	at org.eclipse.e4.ui.internal.workbench.ApplicationPartServiceImpl.requestActivation(ApplicationPartServiceImpl.java:82)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.unzoom(MinMaxAddon.java:826)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.subscribeTopicTagsChanged(MinMaxAddon.java:372)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	... 65 more
 
-!ENTRY org.eclipse.egit.ui 2 0 2021-02-16 14:22:40.169
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\KB'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-
-!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2021-02-16 14:23:43.591
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2021-02-23 16:36:08.082
 !MESSAGE Updating the index from remote failed. Version: 1.0.0.v20150617-0732
 !STACK 0
-org.apache.lucene.index.IndexNotFoundException: no segments* file found in org.apache.lucene.store.MMapDirectory@C:\Users\KB\AppData\Local\Temp\1613453023570-0 lockFactory=org.apache.lucene.store.NativeFSLockFactory@b55ede1: files: []
+org.apache.lucene.index.IndexNotFoundException: no segments* file found in org.apache.lucene.store.MMapDirectory@C:\Users\KB\AppData\Local\Temp\1614065768064-0 lockFactory=org.apache.lucene.store.NativeFSLockFactory@1077aec9: files: []
 	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:712)
 	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:593)
 	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:359)
@@ -335,18 +106,7 @@ org.apache.lucene.index.IndexNotFoundException: no segments* file found in org.a
 	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseService.replaceContent(ProblemsDatabaseService.java:175)
 	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:71)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-
-!ENTRY org.eclipse.ui.ide 4 4 2021-02-16 14:24:41.090
-!MESSAGE Problems saving workspace
-
-!ENTRY org.eclipse.ui.ide 2 1 2021-02-16 14:24:41.100
-!MESSAGE Problems occurred while trying to save the state of the workbench.
-!SUBENTRY 1 org.eclipse.core.resources 2 234 2021-02-16 14:24:41.100
-!MESSAGE The project description file (.project) for 'RemoteSystemsTempFiles' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
-
-!ENTRY org.eclipse.core.resources 2 10035 2021-02-16 14:24:42.002
-!MESSAGE The workspace will exit with unsaved changes in this session.
-!SESSION 2021-02-16 14:27:18.894 -----------------------------------------------
+!SESSION 2021-02-23 16:39:50.186 -----------------------------------------------
 eclipse.buildId=4.5.0.I20150603-2000
 java.version=1.8.0_281
 java.vendor=Oracle Corporation
@@ -354,76 +114,9 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
 Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
-!ENTRY org.eclipse.core.resources 2 10035 2021-02-16 14:27:21.008
-!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
-
-!ENTRY org.eclipse.egit.ui 2 0 2021-02-16 14:27:25.862
+!ENTRY org.eclipse.egit.ui 2 0 2021-02-23 16:39:59.579
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\KB'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-
-!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2021-02-16 14:28:29.417
-!MESSAGE Updating the index from remote failed. Version: 1.0.0.v20150617-0732
-!STACK 0
-org.apache.lucene.index.IndexNotFoundException: no segments* file found in org.apache.lucene.store.MMapDirectory@C:\Users\KB\AppData\Local\Temp\1613453309395-0 lockFactory=org.apache.lucene.store.NativeFSLockFactory@38ade754: files: []
-	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:712)
-	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:593)
-	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:359)
-	at org.apache.lucene.index.IndexWriter.addIndexes(IndexWriter.java:3132)
-	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseService.replaceContent(ProblemsDatabaseService.java:175)
-	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:71)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-!SESSION 2021-02-16 14:29:35.106 -----------------------------------------------
-eclipse.buildId=4.5.0.I20150603-2000
-java.version=1.8.0_281
-java.vendor=Oracle Corporation
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
-Framework arguments:  -product org.eclipse.epp.package.jee.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
-
-!ENTRY org.eclipse.egit.ui 2 0 2021-02-16 14:29:54.137
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\KB'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-
-!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2021-02-16 14:30:57.629
-!MESSAGE Updating the index from remote failed. Version: 1.0.0.v20150617-0732
-!STACK 0
-org.apache.lucene.index.IndexNotFoundException: no segments* file found in org.apache.lucene.store.MMapDirectory@C:\Users\KB\AppData\Local\Temp\1613453457609-0 lockFactory=org.apache.lucene.store.NativeFSLockFactory@2a85963a: files: []
-	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:712)
-	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:593)
-	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:359)
-	at org.apache.lucene.index.IndexWriter.addIndexes(IndexWriter.java:3132)
-	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseService.replaceContent(ProblemsDatabaseService.java:175)
-	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:71)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-02-16 15:04:11.860
-!MESSAGE Failed to download org.eclipse.recommenders:index::zip:0.0.0
-!STACK 0
-org.eclipse.aether.resolution.ArtifactResolutionException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/mars/)
-	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444)
-	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246)
-	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223)
-	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:294)
-	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:190)
-	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:172)
-	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:167)
-	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/mars/)
-	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:39)
-	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:355)
-	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:67)
-	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:581)
-	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:249)
-	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:520)
-	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421)
-	... 8 more
-
-!ENTRY org.eclipse.recommenders.models.rcp 1 0 2021-02-16 15:04:11.865
-!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from the model repositories. Are you offline?
