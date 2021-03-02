@@ -1,0 +1,20 @@
+import aa.bb.cc.AAA;
+
+public class Ex02 {
+	Ex02(){
+		AAA aa = new AAA();
+		System.out.println("aa.a"+aa.a);
+		System.out.println("aa.b"+aa.b);
+		System.out.println("aa.c"+aa.c);
+		System.out.println("aa.d"+aa.d);
+		
+		aa.doA();
+		aa.doB();
+		aa.doC();
+		aa.doD();
+	}
+	public static void main(String[] args){
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+
+public class Student {
+	private String name;
+	private String gender;
+	private int age;
+	
+	public Student (String n,String g,int a){
+		name = n;
+		gender = g;
+		age = a;
+	}
+}
