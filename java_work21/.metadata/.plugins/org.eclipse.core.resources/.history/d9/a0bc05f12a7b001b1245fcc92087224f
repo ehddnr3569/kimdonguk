@@ -18,7 +18,6 @@ public class Main {
 				System.out.print("나이 : ");
 				int age = scan.nextInt();
 				
-				
 				student[0] = new Student (name, gender, age);
 				System.out.println("등록완료");
 			}
