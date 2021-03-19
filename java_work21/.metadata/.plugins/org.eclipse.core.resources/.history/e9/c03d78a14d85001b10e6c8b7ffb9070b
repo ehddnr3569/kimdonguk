@@ -1,0 +1,14 @@
+
+public class AtableMain {
+
+	public AtableMain() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		new AtableMain();
+
+	}
+
+}

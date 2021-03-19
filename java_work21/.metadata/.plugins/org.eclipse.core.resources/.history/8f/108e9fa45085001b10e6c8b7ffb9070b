@@ -1,0 +1,21 @@
+// constructor 생성자
+
+public class AtableMain {
+
+	public AtableMain() {
+		//try 구문안에 있는 내용을 실행 하다가 에러가 발생하면 catch로 빠진다.
+		try{
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		
+		}catch(Exception e){
+			System.out.println("에러 그 클래스 파일 없음");
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		new AtableMain();
+
+	}
+
+}

@@ -1,0 +1,41 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+// constructor 생성자
+
+public class AtableMain {
+
+	public AtableMain() {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		//try 구문안에 있는 내용을 실행 하다가 에러가 발생하면 catch로 빠진다.
+		try{
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","ai","1234");
+			System.out.println("DB연결성공");
+			pstmt = conn.prepareStatement("INSERT INTO ATABLE " +
+										  "(IDX, NAME, GENDER, REMARK) " + 
+										  "VALUES  " +
+										  "('1', ' qqq', 'www', 'eee')");
+			pstmt.executeUpdate();
+		}catch(Exception e){
+			System.out.println("에러 그 클래스 파일 없음");
+		}
+		finally{
+			try{
+				conn.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		new AtableMain();
+
+	}
+
+}

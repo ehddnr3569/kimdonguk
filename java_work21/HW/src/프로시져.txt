@@ -1,0 +1,48 @@
+create or replace PROCEDURE add_atable
+(p_idx atable.idx%type
+,p_name atable.name%type
+,p_gender atable.gender%type
+,p_remark atable.remark%type)
+IS
+BEGIN
+    INSERT INTO atable (idx, name, gender, remark)
+    VALUES (p_idx,p_name,p_gender,p_remark);
+    commit;
+END add_atable;
+
+-------------------------------------------
+
+create or replace PROCEDURE update_atable2
+(p_idx atable.idx%type,
+p_name atable.name%type
+,p_gender atable.gender%type
+,p_remark atable.remark%type)
+IS
+BEGIN
+    update atable
+    set
+        name = p_name,
+        gender = p_gender,
+        remark = p_remark
+    where p_idx = idx;
+    commit;
+END update_atable2;
+
+---------------------------------------------
+create or replace PROCEDURE del_atable
+(p_idx atable.idx%type)
+IS 
+BEGIN
+delete from atable where idx=p_idx;
+commit;
+END del_atable;
+
+
+------------------------------------------------
+create or replace PROCEDURE SELECTALLCOLUMN_atable
+(p_cursor OUT SYS_REFCURSOR)
+IS
+BEGIN
+OPEN p_cursor FOR
+SELECT*FROM atable;
+END SELECTALLCOLUMN_atable;

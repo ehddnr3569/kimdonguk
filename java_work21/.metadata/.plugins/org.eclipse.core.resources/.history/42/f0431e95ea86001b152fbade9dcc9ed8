@@ -1,0 +1,37 @@
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.util.Scanner;
+
+class CallProcedure4 {
+
+	public void delete(){
+		Connection conn = null; // DB연결된 상태(세션)을 담은 객체
+		try {
+			Scanner scan = new Scanner(System.in);
+			System.out.println("번호입력");
+			int idx = scan.nextInt();
+			scan.nextLine();
+			scan.close();
+			conn = DBConnection.getConnection();
+			// 프로시저 호출
+			CallableStatement cs = conn.prepareCall("begin del_atable(?); end;");
+			// 입력 파라메터
+			cs.setInt(1, idx);
+			
+			int seq= cs.executeUpdate();
+			
+			if (seq == 0) {
+				System.out.println(seq + "값");
+			} else {
+				System.out.println(seq + "값 삭제 완료");
+			}
+
+			// rs.close();
+			cs.close();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}
