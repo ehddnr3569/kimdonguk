@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = [1,2,3,4]
+        console.log("길이" +array.length)
+        array.push(5)  //array 끝에 5가 추가됨 
+        console.log("길이" + array.length)
+        console.log("0번째" + array[0])
+        console.log("1번째" + array[1])
+        console.log("2번째" + array[2])
+        console.log("3번째" + array[3])
+        console.log("4번째" + array[4])
+        array[10] = "내가 원하는 위치에 값 바로 넣을 수 있음"
+        console.log(array)
+        array.splice(4,1)// 10번째에 있는거 1개 제거
+        //배열위치로 제거
+        console.log(array)
+        array.splice(0,2)
+        console.log(array)
+        const index = array.indexOf("내가 원하는 위치에 값 바로 넣을 수 있음")
+        array.splice(index,1)
+        console.log(array)
+        //값으로 제거
+
+        array.splice(1,0,"3.5")
+        console.log(array)
+
+    </script>
+</body>
+</html>

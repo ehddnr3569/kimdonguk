@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="#" alt="">
+    <script>
+        var img = document.body.getElementsByTagName('img')[0]
+        // img.src = "4.png"
+
+        const rawInput = prompt('태어난 해를 입력해주세요.', '')
+        const year = Number(rawInput)
+        const e = year % 12
+
+        if (e === 0) {
+            result = '원숭이'
+            img.src = "0.png"
+        } else if (e === 1) {
+            result = '닭'
+            img.src = "1.png"
+        } else if (e === 2) {
+            result = '개'
+            img.src = "2.png"
+        } else if (e === 3) {
+            result = '돼지'
+            img.src = "3.png"
+        } else if (e === 4) {
+            result = '쥐'
+            img.src = "4.png"
+        } else if (e === 5) {
+            result = '소'
+            img.src = "5.png"
+        } else if (e === 6) {
+            result = '호랑이'
+            img.src = "6.png"
+        } else if (e === 7) {
+            result = '토끼'
+            img.src = "7.png"
+        } else if (e === 8) {
+            result = '용'
+            img.src = "8.png"
+        } else if (e === 9) {
+            result = '뱀'
+            img.src = "9.png"
+        } else if (e === 10) {
+            result = '말'
+            img.src = "10.png"
+        } else if (e === 11) {
+            result = '양'
+            img.src = "11.png"
+        }
+
+        alert(`${year}년은 ${result} 띠입니다.`)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const rawInput = prompt('태어난 해를 입력해주세요.', '')
+        const year = Number(rawInput)
+        var e = year%10
+
+        let 간
+        if (e === 0) {간 = '경'}
+        else if (e === 1) {간 = '신'}
+        else if (e === 2) {간 = '임'}
+        else if (e === 3) {간 = '계'}
+        else if (e === 4) {간 = '갑'}
+        else if (e === 5) {간 = '을'}
+        else if (e === 6) {간 = '병'}
+        else if (e === 7) {간 = '정'}
+        else if (e === 8) {간 = '무'}
+        else if (e === 9) {간 = '기'}
+      
+        var e1 = year%12
+        let 띠
+        if (e1 === 0) {띠 = '신'}
+        else if (e1 === 1) {띠 = '유'}
+        else if (e1 === 2) {띠 = '술'}
+        else if (e1 === 3) {띠 = '해'}
+        else if (e1 === 4) {띠 = '자'}
+        else if (e1 === 5) {띠 = '축'}
+        else if (e1 === 6) {띠 = '인'}
+        else if (e1 === 7) {띠 = '묘'}
+        else if (e1 === 8) {띠 = '진'}
+        else if (e1 === 9) {띠 = '사'}
+        else if (e1 === 10) {띠 = '오'}
+        else if (e1 === 11) {띠 = '미'}
+      
+        alert(`${year}년은 ${간}${띠} 년입니다.`)
+      </script>
+      
+</body>
+</html>

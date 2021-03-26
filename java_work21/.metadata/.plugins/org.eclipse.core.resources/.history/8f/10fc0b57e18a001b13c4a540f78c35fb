@@ -1,0 +1,9 @@
+
+public class UniFriend extends Friend{
+	String mager;
+	public UniFriend(String name, String number,String mager) {
+		super(name, number);
+		this.major = major;
+	}
+	
+}
