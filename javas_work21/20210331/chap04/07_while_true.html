@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //보통 while문 쓰는 방법
+        let count = 0;
+        while(true){
+            count++;
+            if(count > 100)
+            break;
+        }
+
+        
+        alert('continue')
+        let sum = 0;
+        for(let i = 0; i<101; i++)
+        {
+            if(i%2 == 0)
+                continue;
+            else
+                sum += i;
+            console.log(i)
+        }
+
+        alert(sum);
+
+
+
+        //break 안쓰고 할경우
+        count = 0;
+        while(count<100)
+        {
+            count++
+            count.log(count)
+        }
+
+    </script>
+</body>
+</html>
