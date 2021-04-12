@@ -1,0 +1,7 @@
+C:\Users\KB\Documents\GitHub\kimdonguk\c#_work21\ClassTest2\ClassTest2\bin\Debug\ClassTest2.exe.config
+C:\Users\KB\Documents\GitHub\kimdonguk\c#_work21\ClassTest2\ClassTest2\bin\Debug\ClassTest2.exe
+C:\Users\KB\Documents\GitHub\kimdonguk\c#_work21\ClassTest2\ClassTest2\bin\Debug\ClassTest2.pdb
+C:\Users\KB\Documents\GitHub\kimdonguk\c#_work21\ClassTest2\ClassTest2\obj\Debug\ClassTest2.csprojAssemblyReference.cache
+C:\Users\KB\Documents\GitHub\kimdonguk\c#_work21\ClassTest2\ClassTest2\obj\Debug\ClassTest2.csproj.CoreCompileInputs.cache
+C:\Users\KB\Documents\GitHub\kimdonguk\c#_work21\ClassTest2\ClassTest2\obj\Debug\ClassTest2.exe
+C:\Users\KB\Documents\GitHub\kimdonguk\c#_work21\ClassTest2\ClassTest2\obj\Debug\ClassTest2.pdb
